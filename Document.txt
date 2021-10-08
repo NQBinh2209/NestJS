@@ -1,0 +1,16 @@
+﻿1. Sử dụng chung services giữa các module như thế nào?
+    - Export Service cần share cho các Module khác, ở module nào cần sử dụng thì import Module chứa Service.
+
+2. Các chức năng của từng file (controller, services, module, .spec)
+    - Controller: Nhận Request của người dùng (GET, POST, DELETE, PATCH,...), và Response lại cho người dùng.
+    - Service: Dùng logic và thuật toán cần thiết để tương tác xử lí dữ liệu từ Database.
+    - Module:
+
+3. Exception là gì? Config như thế nào?
+    - 
+4. Build project structure theo feature là như thế nào?
+5. Xử lý bất đồng bộ như thế nào? Nâng cao hiệu xuất khi chạy đồng bộ/bất đồng bộ
+6. Lưu trữ file lên cloud storage
+7. Cách tốt nhất để quản lý Error
+8. Những xử lý về phần quyền (Gurad, Role, token strategy)
+9. Quản lý về Response, Request chuẩn cho Rest API
