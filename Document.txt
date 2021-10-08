@@ -4,9 +4,10 @@
 2. Các chức năng của từng file (controller, services, module, .spec)
     - Controller: Nhận Request của người dùng (GET, POST, DELETE, PATCH,...), và Response lại cho người dùng.
     - Service: Dùng logic và thuật toán cần thiết để tương tác xử lí dữ liệu từ Database.
-    - Module: 
+    - Module:
 
 3. Exception là gì? Config như thế nào?
+    - 
 4. Build project structure theo feature là như thế nào?
 5. Xử lý bất đồng bộ như thế nào? Nâng cao hiệu xuất khi chạy đồng bộ/bất đồng bộ
 6. Lưu trữ file lên cloud storage
