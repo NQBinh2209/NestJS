@@ -11,8 +11,10 @@
 
 4. Build project structure theo feature là như thế nào?
     - Đầu tiên xác định được cách yêu cầu của chương trình mà khách hàng yêu cầu, sau khi xác định được các yêu cầu thì chia ra giải quyết từng yêu cầu mỗi yêu cầu có thể coi như một tính năng, ta có thể cho mỗi tính năng thành một module riêng biệt, trong mỗi tính năng có những tính năng cần giải thuật phức tạp thì ta có thể phân nhỏ ra thêm nhiều module con nữa. việc phân chia ra càng nhỏ theo chức năng như vậy sẽ dễ dàng quản lí sourcode cũng như khi một tính năng của chương trình có vấn đề ta có thể dựa theo đó để test theo từng chức năng chia nhỏ để dễ dàng khoanh vùng tìm ra và fix lỗi.
-    
+
 5. Xử lý bất đồng bộ như thế nào? Nâng cao hiệu xuất khi chạy đồng bộ/bất đồng bộ
+    - Xử lí đồng bộ là cách lệnh(hàm)(hàm) sẽ thực thi từng lệnh(hàm) từ trên xuống, khi thực thi và có kết quả của lệnh(hàm) trên xong thì mới tới lệnh(hàm) bên dưới, còn bất đồng bộ là sẽ thực hiện không cần kết quả của lệnh(hàm) trên thì lệnh(hàm) dưới vẫn thực hiện bình thường
+    - Để nâng cao hiệu suất của bất đồng bộ, các hàm được gọi sẽ được đưa vào queue, vào trước sẽ được xử lí trước, trong quá trình xử lí sẽ có những hàm cần những hàm con khác vì vậy các hàm con này sẽ được đưa vào call stack và được xử lí theo FILO khi stack rỗng thì hàm chính cũng được xử lí xong và hàm đang chờ ở hàng đợi tiếp theo được gọi vào xử lí tiếp tục. Sử dụng từ khoá async để khai báo hàm này xử lí bất đồng bộ và nó sẽ chờ kết quả của các hàm bất đồng bộ trả về rồi mới thực hiện tiếp tục và hàm bất đồng bộ đó được khai báo với từ khoá await.
 6. Lưu trữ file lên cloud storage
 7. Cách tốt nhất để quản lý Error
 8. Những xử lý về phần quyền (Gurad, Role, token strategy)
