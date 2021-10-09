@@ -7,8 +7,11 @@
     - Module:
 
 3. Exception là gì? Config như thế nào?
-    - 
+    - Exception là một sự kiện xảy ra trong quá trình thực thi chương trình phá vỡ đi flow bình thường của một chương trình ( trong quá trình viết chương trình lập trình viên có thể dự đoán trước được những tình huống xảy ra như người dùng nhập sai kiểu dữ liệu hoặc nhập thiếu dữ liệu đầu vào, hoặc kiểm tra kết nối mạng,... Tuy nhiên ở một project lớn sẽ có những tình huống xảy ra do sai giải thuật hay logic lập trình viên sẽ không đoán trước được để bắt được lỗi)
+
 4. Build project structure theo feature là như thế nào?
+    - Đầu tiên xác định được cách yêu cầu của chương trình mà khách hàng yêu cầu, sau khi xác định được các yêu cầu thì chia ra giải quyết từng yêu cầu mỗi yêu cầu có thể coi như một tính năng, ta có thể cho mỗi tính năng thành một module riêng biệt, trong mỗi tính năng có những tính năng cần giải thuật phức tạp thì ta có thể phân nhỏ ra thêm nhiều module con nữa. việc phân chia ra càng nhỏ theo chức năng như vậy sẽ dễ dàng quản lí sourcode cũng như khi một tính năng của chương trình có vấn đề ta có thể dựa theo đó để test theo từng chức năng chia nhỏ để dễ dàng khoanh vùng tìm ra và fix lỗi.
+    
 5. Xử lý bất đồng bộ như thế nào? Nâng cao hiệu xuất khi chạy đồng bộ/bất đồng bộ
 6. Lưu trữ file lên cloud storage
 7. Cách tốt nhất để quản lý Error
