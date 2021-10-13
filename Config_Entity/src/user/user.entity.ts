@@ -2,7 +2,7 @@
 import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from 'typeorm';
 import { StatusUser } from './status-user.model';
 
-@Entity()
+@Entity('USER')
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
