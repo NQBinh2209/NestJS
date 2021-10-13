@@ -6,8 +6,8 @@ import { UserController } from './user.controller';
 import { ConfigService } from '@nestjs/config';
 @Module({
   imports: [TypeOrmModule.forFeature([User])],
+  exports: [UserService],
   controllers: [UserController],
   providers: [UserService, ConfigService],
-  exports: [UserService],
 })
 export class UserModule {}
