@@ -11,4 +11,3 @@ import { ConfigService } from '@nestjs/config';
   providers: [UserService, ConfigService],
 })
 export class UserModule {}
- 
