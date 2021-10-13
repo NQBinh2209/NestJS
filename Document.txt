@@ -18,4 +18,4 @@
 6. Lưu trữ file lên cloud storage
 7. Cách tốt nhất để quản lý Error
 8. Những xử lý về phần quyền (Gurad, Role, token strategy)
-9. Quản lý về Response, Request chuẩn cho Rest API
+9. Quản lý về Response, Request chuẩn cho Rest API 
